@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Образовательный центр "Знание"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Знание</h1>
+                    <p>образовательный центр</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#courses">Курсы</a></li>
+                        <li><a href="#teachers">Преподаватели</a></li>
+                        <li><a href="#signup">Запись</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Герой-секция -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Обучение, которое меняет жизнь</h2>
+                    <p>Курсы по программированию, дизайну, аналитике и английскому языку. Опытные преподаватели и поддержка на каждом этапе.</p>
+                    <div class="hero-buttons">
+                        <a href="#courses" class="btn btn-primary">Смотреть курсы</a>
+                        <a href="#signup" class="btn btn-secondary">Записаться</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Каталог курсов -->
+        <section id="courses" class="courses">
+            <div class="container">
+                <h2 class="section-title">Наши курсы</h2>
+                <div class="courses-list" id="coursesList">
+                    <!-- динамическая загрузка из JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Преподаватели -->
+        <section id="teachers" class="teachers">
+            <div class="container">
+                <h2 class="section-title">Преподаватели</h2>
+                <div class="teachers-list" id="teachersList">
+                    <!-- динамическая загрузка из JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма записи -->
+        <section id="signup" class="signup">
+            <div class="container">
+                <h2 class="section-title">Запись на курсы</h2>
+                <div class="form-container">
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label>Ваше имя</label>
+                            <input type="text" id="name" placeholder="Иванова Анна" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Телефон</label>
+                            <input type="tel" id="phone" placeholder="+7 (900) 123-45-67" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" id="email" placeholder="hello@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Выберите курс</label>
+                            <select id="course">
+                                <option value="Web-разработка">Web-разработка</option>
+                                <option value="Аналитика данных">Аналитика данных</option>
+                                <option value="Графический дизайн">Графический дизайн</option>
+                                <option value="Английский язык">Английский язык</option>
+                                <option value="Python для начинающих">Python для начинающих</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <h2 class="section-title">Контакты</h2>
+                <div class="contacts-info">
+                    <div>
+                        <h3>Адрес</h3>
+                        <p>г. Москва, ул. Образовательная, д. 12</p>
+                    </div>
+                    <div>
+                        <h3>Телефон</h3>
+                        <p>+7 (495) 123-45-67</p>
+                    </div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>info@znanie-edu.ru</p>
+                    </div>
+                    <div>
+                        <h3>Режим работы</h3>
+                        <p>Пн–Пт: 9:00 – 20:00</p>
+                        <p>Сб: 10:00 – 15:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Образовательный центр "Знание". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
